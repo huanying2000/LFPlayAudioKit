@@ -16,6 +16,10 @@
 		9B58DD7724D2AAE60063698A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B58DD7624D2AAE60063698A /* main.m */; };
 		9B58DD8124D2AAE60063698A /* LFPlayAudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B58DD8024D2AAE60063698A /* LFPlayAudioTests.m */; };
 		9B58DD8C24D2AAE60063698A /* LFPlayAudioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B58DD8B24D2AAE60063698A /* LFPlayAudioUITests.m */; };
+		9B58DD9C24D2AB7A0063698A /* LFPlayAudioKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B58DD9B24D2AB7A0063698A /* LFPlayAudioKit.m */; };
+		9B58DD9F24D2ABA80063698A /* LFPlayAudioSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B58DD9E24D2ABA80063698A /* LFPlayAudioSlider.m */; };
+		9B58DDA224D2ABCD0063698A /* LFPlayAudioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B58DDA124D2ABCD0063698A /* LFPlayAudioModel.m */; };
+		9B95704824D4248700F18AA7 /* LFAudioRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B95704724D4248700F18AA7 /* LFAudioRecordManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,14 @@
 		9B58DD8724D2AAE60063698A /* LFPlayAudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFPlayAudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B58DD8B24D2AAE60063698A /* LFPlayAudioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFPlayAudioUITests.m; sourceTree = "<group>"; };
 		9B58DD8D24D2AAE60063698A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B58DD9A24D2AB7A0063698A /* LFPlayAudioKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFPlayAudioKit.h; sourceTree = "<group>"; };
+		9B58DD9B24D2AB7A0063698A /* LFPlayAudioKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFPlayAudioKit.m; sourceTree = "<group>"; };
+		9B58DD9D24D2ABA80063698A /* LFPlayAudioSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFPlayAudioSlider.h; sourceTree = "<group>"; };
+		9B58DD9E24D2ABA80063698A /* LFPlayAudioSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFPlayAudioSlider.m; sourceTree = "<group>"; };
+		9B58DDA024D2ABCD0063698A /* LFPlayAudioModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFPlayAudioModel.h; sourceTree = "<group>"; };
+		9B58DDA124D2ABCD0063698A /* LFPlayAudioModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFPlayAudioModel.m; sourceTree = "<group>"; };
+		9B95704624D4248700F18AA7 /* LFAudioRecordManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFAudioRecordManager.h; sourceTree = "<group>"; };
+		9B95704724D4248700F18AA7 /* LFAudioRecordManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFAudioRecordManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,7 @@
 		9B58DD6324D2AAE20063698A /* LFPlayAudio */ = {
 			isa = PBXGroup;
 			children = (
+				9B58DD9924D2AB330063698A /* LFPlayAudio */,
 				9B58DD6424D2AAE20063698A /* AppDelegate.h */,
 				9B58DD6524D2AAE20063698A /* AppDelegate.m */,
 				9B58DD6724D2AAE20063698A /* SceneDelegate.h */,
@@ -135,6 +148,21 @@
 				9B58DD8D24D2AAE60063698A /* Info.plist */,
 			);
 			path = LFPlayAudioUITests;
+			sourceTree = "<group>";
+		};
+		9B58DD9924D2AB330063698A /* LFPlayAudio */ = {
+			isa = PBXGroup;
+			children = (
+				9B58DD9A24D2AB7A0063698A /* LFPlayAudioKit.h */,
+				9B58DD9B24D2AB7A0063698A /* LFPlayAudioKit.m */,
+				9B58DD9D24D2ABA80063698A /* LFPlayAudioSlider.h */,
+				9B58DD9E24D2ABA80063698A /* LFPlayAudioSlider.m */,
+				9B58DDA024D2ABCD0063698A /* LFPlayAudioModel.h */,
+				9B58DDA124D2ABCD0063698A /* LFPlayAudioModel.m */,
+				9B95704624D4248700F18AA7 /* LFAudioRecordManager.h */,
+				9B95704724D4248700F18AA7 /* LFAudioRecordManager.m */,
+			);
+			path = LFPlayAudio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +298,11 @@
 				9B58DD6C24D2AAE20063698A /* ViewController.m in Sources */,
 				9B58DD6624D2AAE20063698A /* AppDelegate.m in Sources */,
 				9B58DD7724D2AAE60063698A /* main.m in Sources */,
+				9B58DD9F24D2ABA80063698A /* LFPlayAudioSlider.m in Sources */,
+				9B58DD9C24D2AB7A0063698A /* LFPlayAudioKit.m in Sources */,
+				9B58DDA224D2ABCD0063698A /* LFPlayAudioModel.m in Sources */,
 				9B58DD6924D2AAE20063698A /* SceneDelegate.m in Sources */,
+				9B95704824D4248700F18AA7 /* LFAudioRecordManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
